@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+}
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+}
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+    position: relative;
+    left: 60px;
+
+}
+.biography-icon{
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+    right: 5%;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+    position: relative;
+    right: 5%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom:-5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: lightskyblue;
+    transition: width 0.3s; 
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+.text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    top: 23%;
+}
+.text-box p{
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+    left: 90%;
+    top: 1%;
+}
+.text-box h1{
+    font-size: 140px;
+    line-height: 160px;
+    margin-left: -10px;
+    position: relative;
+    left: 90%;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url("images\ and\ videos/back.png");
+    -webkit-background-clip:  text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+    background-position: 2000px 0;
+}
+}
+
+.text-box h3{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    left: 90%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    position: relative;
+    left: 90%;
+}
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.social-icons{
+    position: relative;
+    left: 5%;
+    position: absolute;
+    bottom: 20px;
+}
+.social-icons img{
+    width: 45px;
+    display: block;
+    margin: 25px 5px;
+   
+}
+
+
+
+
+
