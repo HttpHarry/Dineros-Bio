@@ -20,7 +20,7 @@
 @media (max-aspect-ratio: 16/9){
     .back-video{
         width: auto;
-        height: 100%;
+        heigh: 100%;
 }
 }
 nav{
@@ -84,15 +84,16 @@ nav ul li a:hover::after{
     font-size: 35px;
     font-weight: 600;
     position: relative;
-    left: 90%;
-    top: 1%;
+    left: 70%;
+    bottom: -10%;
 }
 .text-box h1{
     font-size: 140px;
     line-height: 160px;
     margin-left: -10px;
     position: relative;
-    left: 90%;
+    left: 70%;
+    bottom: -10%;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     background: url("images\ and\ videos/back.png");
@@ -110,7 +111,8 @@ nav ul li a:hover::after{
     font-size: 20px;
     font-weight: 500;
     position: relative;
-    left: 90%;
+    left: 70%;
+    bottom: -10%;
 }
 .row{
     display: flex;
@@ -118,7 +120,9 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
     margin-top: 30px;
     position: relative;
-    left: 90%;
+    left: 70%;
+    bottom: -10%
+    
 }
 .text-box a{
     color: #fff;
@@ -144,7 +148,6 @@ nav ul li a:hover::after{
     width: 45px;
     display: block;
     margin: 25px 5px;
-   
 }
 
 
